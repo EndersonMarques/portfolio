@@ -123,6 +123,60 @@ export const messages = {
       }
     },
     
+    // Work Process Section
+    workProcess: {
+      title: 'Como Trabalhamos Juntos',
+      subtitle: 'Um processo comprovado que garante que seu site de tours de motocicleta supere as expectativas e gere reservas.',
+      step: 'Etapa',
+      steps: {
+        discovery: {
+          title: 'Chamada de Descoberta',
+          duration: '30 min',
+          description: 'Discutimos seu negócio, objetivos e visão para o site perfeito.'
+        },
+        design: {
+          title: 'Design e Planejamento',
+          duration: '3-5 dias',
+          description: 'Crio wireframes e mockups de design personalizados para seu negócio de tours de motocicleta.'
+        },
+        development: {
+          title: 'Desenvolvimento',
+          duration: '2-3 semanas',
+          description: 'Construindo seu site com tecnologia moderna e melhores práticas.'
+        },
+        launch: {
+          title: 'Lançamento e Suporte',
+          duration: 'Contínuo',
+          description: 'Coloque seu novo site no ar e receba 30 dias de suporte gratuito.'
+        }
+      },
+      guaranteesTitle: 'O Que Você Recebe Garantido',
+      guarantees: {
+        mobile: 'Design responsivo para mobile',
+        seo: 'Otimização SEO incluída',
+        speed: 'Velocidades de carregamento rápidas',
+        management: 'Gerenciamento fácil de conteúdo',
+        support: '30 dias de suporte incluído',
+        guarantee: 'Garantia de devolução do dinheiro'
+      },
+      timeline: {
+        title: 'Cronograma: 3-4 Semanas Total',
+        description: 'Desde nossa primeira chamada até seu site estar no ar, todo o processo leva apenas 3-4 semanas. A maior parte desse tempo é gasto aperfeiçoando o design e a funcionalidade.',
+        week1: {
+          title: 'Semana 1',
+          description: 'Planejamento e Design'
+        },
+        week2: {
+          title: 'Semana 2-3',
+          description: 'Desenvolvimento'
+        },
+        week3: {
+          title: 'Semana 4',
+          description: 'Testes e Lançamento'
+        }
+      }
+    },
+    
     // Projects Section
     projects: {
       title: 'Projetos em Destaque',
@@ -323,6 +377,60 @@ export const messages = {
         roi: 'Significant return on investment',
         solution: 'let\'s discuss how we can create the perfect solution for your business',
         cta: 'Let\'s Discuss Your Project'
+      }
+    },
+    
+    // Work Process Section
+    workProcess: {
+      title: 'How We Work Together',
+      subtitle: 'A proven process that ensures your motorcycle tour website exceeds expectations and drives bookings.',
+      step: 'Step',
+      steps: {
+        discovery: {
+          title: 'Discovery Call',
+          duration: '30 min',
+          description: 'We discuss your business, goals, and vision for the perfect website.'
+        },
+        design: {
+          title: 'Design & Planning',
+          duration: '3-5 days',
+          description: 'I create wireframes and design mockups tailored to your motorcycle tour business.'
+        },
+        development: {
+          title: 'Development',
+          duration: '2-3 weeks',
+          description: 'Building your website with modern technology and best practices.'
+        },
+        launch: {
+          title: 'Launch & Support',
+          duration: 'Ongoing',
+          description: 'Go live with your new website and receive 30 days of free support.'
+        }
+      },
+      guaranteesTitle: 'What You Get Guaranteed',
+      guarantees: {
+        mobile: 'Mobile-responsive design',
+        seo: 'SEO optimization included',
+        speed: 'Fast loading speeds',
+        management: 'Easy content management',
+        support: '30-day support included',
+        guarantee: 'Money-back guarantee'
+      },
+      timeline: {
+        title: 'Timeline: 3-4 Weeks Total',
+        description: 'From our first call to your website going live, the entire process takes just 3-4 weeks. Most of that time is spent perfecting the design and functionality.',
+        week1: {
+          title: 'Week 1',
+          description: 'Planning & Design'
+        },
+        week2: {
+          title: 'Week 2-3',
+          description: 'Development'
+        },
+        week3: {
+          title: 'Week 4',
+          description: 'Testing & Launch'
+        }
       }
     },
     

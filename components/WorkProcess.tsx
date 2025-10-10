@@ -12,37 +12,37 @@ export default function WorkProcess() {
   const steps = [
     {
       icon: MessageCircle,
-      title: "Discovery Call",
-      duration: "30 min",
-      description: "We discuss your business, goals, and vision for the perfect website."
+      title: t('workProcess.steps.discovery.title'),
+      duration: t('workProcess.steps.discovery.duration'),
+      description: t('workProcess.steps.discovery.description')
     },
     {
       icon: Palette,
-      title: "Design & Planning",
-      duration: "3-5 days",
-      description: "I create wireframes and design mockups tailored to your motorcycle tour business."
+      title: t('workProcess.steps.design.title'),
+      duration: t('workProcess.steps.design.duration'),
+      description: t('workProcess.steps.design.description')
     },
     {
       icon: Code,
-      title: "Development",
-      duration: "2-3 weeks",
-      description: "Building your website with modern technology and best practices."
+      title: t('workProcess.steps.development.title'),
+      duration: t('workProcess.steps.development.duration'),
+      description: t('workProcess.steps.development.description')
     },
     {
       icon: Rocket,
-      title: "Launch & Support",
-      duration: "Ongoing",
-      description: "Go live with your new website and receive 30 days of free support."
+      title: t('workProcess.steps.launch.title'),
+      duration: t('workProcess.steps.launch.duration'),
+      description: t('workProcess.steps.launch.description')
     }
   ];
 
   const guarantees = [
-    "Mobile-responsive design",
-    "SEO optimization included",
-    "Fast loading speeds",
-    "Easy content management",
-    "30-day support included",
-    "Money-back guarantee"
+    t('workProcess.guarantees.mobile'),
+    t('workProcess.guarantees.seo'),
+    t('workProcess.guarantees.speed'),
+    t('workProcess.guarantees.management'),
+    t('workProcess.guarantees.support'),
+    t('workProcess.guarantees.guarantee')
   ];
 
   return (
@@ -60,10 +60,10 @@ export default function WorkProcess() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            How We Work Together
+            {t('workProcess.title')}
           </h2>
           <p className="text-lg text-secondary max-w-3xl mx-auto">
-            A proven process that ensures your motorcycle tour website exceeds expectations and drives bookings.
+            {t('workProcess.subtitle')}
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ export default function WorkProcess() {
                 )}
               </div>
               <div className="text-sm font-semibold text-primary mb-1">
-                Step {index + 1}
+                {t('workProcess.step')} {index + 1}
               </div>
               <h3 className="text-lg font-bold text-primary mb-2">
                 {step.title}
@@ -111,7 +111,7 @@ export default function WorkProcess() {
           className="card p-8"
         >
           <h3 className="text-2xl font-bold text-primary mb-6 text-center">
-            What You Get Guaranteed
+            {t('workProcess.guaranteesTitle')}
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -141,24 +141,23 @@ export default function WorkProcess() {
         >
           <div className="card p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-4">
-              Timeline: 3-4 Weeks Total
+              {t('workProcess.timeline.title')}
             </h3>
             <p className="text-secondary mb-6">
-              From our first call to your website going live, the entire process takes just 3-4 weeks. 
-              Most of that time is spent perfecting the design and functionality.
+              {t('workProcess.timeline.description')}
             </p>
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
-                <div className="text-2xl font-bold text-primary">Week 1</div>
-                <div className="text-sm text-secondary">Planning & Design</div>
+                <div className="text-2xl font-bold text-primary">{t('workProcess.timeline.week1.title')}</div>
+                <div className="text-sm text-secondary">{t('workProcess.timeline.week1.description')}</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">Week 2-3</div>
-                <div className="text-sm text-secondary">Development</div>
+                <div className="text-2xl font-bold text-primary">{t('workProcess.timeline.week2.title')}</div>
+                <div className="text-sm text-secondary">{t('workProcess.timeline.week2.description')}</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">Week 4</div>
-                <div className="text-sm text-secondary">Testing & Launch</div>
+                <div className="text-2xl font-bold text-primary">{t('workProcess.timeline.week3.title')}</div>
+                <div className="text-sm text-secondary">{t('workProcess.timeline.week3.description')}</div>
               </div>
             </div>
           </div>

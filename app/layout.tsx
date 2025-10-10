@@ -4,18 +4,50 @@ import { LanguageProvider } from '@/lib/useLanguage'
 import { ThemeProvider } from '@/lib/useTheme'
 import LanguageDetector from '@/components/LanguageDetector'
 import ThemeApplier from '@/components/ThemeApplier'
+import StructuredData from '@/components/StructuredData'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Enderson Marques - Full-stack Developer',
   description: 'Building fast, modern, conversion-focused web apps & landing pages. Full-stack developer specializing in React, Next.js, and scalable web solutions.',
-  keywords: 'full-stack developer, react, next.js, web development, brazil, recife',
+  keywords: 'full-stack developer, react, next.js, web development, brazil, recife, javascript, typescript, node.js, mongodb, postgresql, aws, docker, portfolio, freelancer, web developer',
   authors: [{ name: 'Enderson Marques' }],
+  creator: 'Enderson Marques',
+  publisher: 'Enderson Marques',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://endersonmarques.vercel.app',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/favicon.svg', color: '#2563eb' }
+    ]
+  },
+  manifest: '/site.webmanifest',
+  themeColor: '#2563eb',
   openGraph: {
     title: 'Enderson Marques - Full-stack Developer',
     description: 'Building fast, modern, conversion-focused web apps & landing pages',
-    url: 'https://endersonmarques.dev',
+    url: 'https://endersonmarques.vercel.app',
     siteName: 'Enderson Marques Portfolio',
     images: [
       {
@@ -43,6 +75,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <StructuredData />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider>
           <ThemeApplier />
