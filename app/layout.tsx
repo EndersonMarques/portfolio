@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/lib/useTheme'
 import LanguageDetector from '@/components/LanguageDetector'
 import ThemeApplier from '@/components/ThemeApplier'
 import StructuredData from '@/components/StructuredData'
+import { siteConfig } from '@/lib/config'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,7 +32,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://endersonmarques.vercel.app',
+    canonical: siteConfig.url,
   },
   icons: {
     icon: [
@@ -51,7 +52,7 @@ export const metadata = {
   openGraph: {
     title: 'Enderson Marques - Full-stack Developer',
     description: 'Building fast, modern, conversion-focused web apps & landing pages',
-    url: 'https://endersonmarques.vercel.app',
+    url: siteConfig.url,
     siteName: 'Enderson Marques Portfolio',
     images: [
       {

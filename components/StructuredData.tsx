@@ -1,6 +1,7 @@
 'use client';
 
 import { PROFILE } from '@/lib/data';
+import { siteConfig } from '@/lib/config';
 
 export default function StructuredData() {
   const structuredData = {
@@ -9,8 +10,8 @@ export default function StructuredData() {
     "name": PROFILE.name,
     "jobTitle": PROFILE.title,
     "description": PROFILE.bio,
-    "url": "https://endersonmarques.vercel.app",
-    "image": "https://endersonmarques.vercel.app/profile_me.png",
+    "url": siteConfig.url,
+    "image": `${siteConfig.url}/profile_me.png`,
     "sameAs": [
       PROFILE.github,
       PROFILE.linkedin
