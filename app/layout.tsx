@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import { LanguageProvider } from '@/lib/useLanguage'
 import { ThemeProvider } from '@/lib/useTheme'
 import LanguageDetector from '@/components/LanguageDetector'
@@ -11,10 +12,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Enderson Marques - Full-stack Developer',
   description: 'Building fast, modern, conversion-focused web apps & landing pages. Full-stack developer specializing in React, Next.js, and scalable web solutions.',
-  keywords: 'full-stack developer, react, next.js, web development, brazil, recife, javascript, typescript, node.js, mongodb, postgresql, aws, docker, portfolio, freelancer, web developer',
+  keywords: 'full-stack developer, react, next.js, web development, brazil, recife, javascript, typescript, node.js, mongodb, postgresql, aws, docker, portfolio, freelancer, web developer, enderson marques, endersonmarques, endersonmarques.vercel.app',
   authors: [{ name: 'Enderson Marques' }],
   creator: 'Enderson Marques',
   publisher: 'Enderson Marques',
+  verification: {
+    google: 'O_nm7lWODrWXvsqCjgWU150bQMLCmC3J713peuZS4DA',
+  },
   robots: {
     index: true,
     follow: true,
@@ -77,6 +81,18 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <StructuredData />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-71LPGNDSJL"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-71LPGNDSJL');
+          `}
+        </Script>
       </head>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider>
