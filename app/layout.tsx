@@ -18,7 +18,7 @@ export const metadata = {
   creator: 'Enderson Marques',
   publisher: 'Enderson Marques',
   verification: {
-    google: 'O_nm7lWODrWXvsqCjgWU150bQMLCmC3J713peuZS4DA',
+    google: 'ch-ulYmDn-ux_BwgS3Lp0L2H1tdeiC0fZAmVDEF-o1I',
   },
   robots: {
     index: true,
