@@ -1,3 +1,3 @@
 export const siteConfig = {
-  url: 'https://endersonmarques.vercel.app',
+  url: 'https://www.endersonmarques.com/',
 };

@@ -11,6 +11,7 @@ import { siteConfig } from '@/lib/config'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: 'Enderson Marques - Full-stack Developer',
   description: 'Building fast, modern, conversion-focused web apps & landing pages. Full-stack developer specializing in React, Next.js, and scalable web solutions.',
   keywords: 'full-stack developer, react, next.js, web development, brazil, recife, javascript, typescript, node.js, mongodb, postgresql, aws, docker, portfolio, freelancer, web developer, enderson marques, endersonmarques, endersonmarques.vercel.app',
@@ -48,7 +49,6 @@ export const metadata = {
     ]
   },
   manifest: '/site.webmanifest',
-  themeColor: '#2563eb',
   openGraph: {
     title: 'Enderson Marques - Full-stack Developer',
     description: 'Building fast, modern, conversion-focused web apps & landing pages',
@@ -71,6 +71,10 @@ export const metadata = {
     description: 'Building fast, modern, conversion-focused web apps & landing pages',
     images: ['/og-image.jpg'],
   },
+}
+
+export const viewport = {
+  themeColor: '#2563eb',
 }
 
 export default function RootLayout({
