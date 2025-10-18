@@ -13,7 +13,7 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>('blue');
 
   useEffect(() => {
     // Check if theme is stored in localStorage
@@ -23,7 +23,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     } else {
       // Check system preference for dark mode
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDark ? 'dark' : 'light');
+      setTheme(prefersDark ? 'dark' : 'blue');
     }
   }, []);
 
